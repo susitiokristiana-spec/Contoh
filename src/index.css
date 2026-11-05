@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Quicksand', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@keyframes gentle-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes gentle-wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-4deg); }
+  75% { transform: rotate(4deg); }
+}
+
+@keyframes float-bubble {
+  0% { transform: translateY(0px) scale(0.95); opacity: 0.8; }
+  50% { transform: translateY(-12px) scale(1.05); opacity: 1; }
+  100% { transform: translateY(0px) scale(0.95); opacity: 0.8; }
+}
+
+.animate-gentle-bounce {
+  animation: gentle-bounce 2.4s ease-in-out infinite;
+}
+
+.animate-wiggle {
+  animation: gentle-wiggle 1.8s ease-in-out infinite;
+}
+
+.animate-float-bubble {
+  animation: float-bubble 3.2s ease-in-out infinite;
+}

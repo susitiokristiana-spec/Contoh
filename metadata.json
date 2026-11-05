@@ -1,0 +1,6 @@
+{
+  "name": "Petualangan Huruf J - Edukasi TK A",
+  "description": "Game edukatif interaktif mengenal huruf J untuk anak TK A dengan animasi lucu, suara fonik, tebak gambar, dan latihan menulis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
